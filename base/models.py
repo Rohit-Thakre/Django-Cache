@@ -9,4 +9,4 @@ class Student(models.Model):
     eduction = models.CharField(max_length=50)
 
     def __str__(self) -> str:
-        return self.phone
+        return str(self.phone)  + str(self.address)
